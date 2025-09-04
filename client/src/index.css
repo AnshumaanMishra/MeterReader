@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 20%, 98%);
+  --foreground: hsl(222.2, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222.2, 84%, 4.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222.2, 84%, 4.9%);
+  --primary: hsl(172, 66%, 50%);
+  --primary-foreground: hsl(210, 20%, 98%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(222.2, 47.4%, 11.2%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222.2, 47.4%, 11.2%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 20%, 98%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --ring: hsl(172, 66%, 50%);
+  --chart-1: hsl(172, 66%, 50%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(210, 40%, 98%);
+  --sidebar-foreground: hsl(222.2, 84%, 4.9%);
+  --sidebar-primary: hsl(172, 66%, 50%);
+  --sidebar-primary-foreground: hsl(210, 20%, 98%);
+  --sidebar-accent: hsl(210, 40%, 96%);
+  --sidebar-accent-foreground: hsl(222.2, 47.4%, 11.2%);
+  --sidebar-border: hsl(214.3, 31.8%, 91.4%);
+  --sidebar-ring: hsl(172, 66%, 50%);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'Courier New', monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 1px 2px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 1px 2px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 2px 4px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 4px 6px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 8px 10px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(222.2, 84%, 4.9%);
+  --foreground: hsl(210, 20%, 98%);
+  --card: hsl(222.2, 84%, 4.9%);
+  --card-foreground: hsl(210, 20%, 98%);
+  --popover: hsl(222.2, 84%, 4.9%);
+  --popover-foreground: hsl(210, 20%, 98%);
+  --primary: hsl(172, 66%, 50%);
+  --primary-foreground: hsl(222.2, 84%, 4.9%);
+  --secondary: hsl(217.2, 32.6%, 17.5%);
+  --secondary-foreground: hsl(210, 20%, 98%);
+  --muted: hsl(217.2, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --accent: hsl(217.2, 32.6%, 17.5%);
+  --accent-foreground: hsl(210, 20%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 20%, 98%);
+  --border: hsl(217.2, 32.6%, 17.5%);
+  --input: hsl(217.2, 32.6%, 17.5%);
+  --ring: hsl(172, 66%, 50%);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'Courier New', monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 1px 2px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 1px 2px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 2px 4px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 4px 6px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00), 0px 8px 10px -1px hsl(172, 66%, 50% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(172, 66%, 50% / 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .camera-preview {
+    aspect-ratio: 4/3;
+    min-height: 300px;
+    background: linear-gradient(135deg, hsl(215, 25%, 27%), hsl(215, 25%, 23%));
+    border: 2px dashed var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .camera-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .reading-display {
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px var(--primary);
+  }
+
+  .segment-display {
+    background: hsl(0, 0%, 8%);
+    color: hsl(122, 39%, 49%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 2px solid hsl(122, 39%, 25%);
+    box-shadow: inset 0 0 20px hsl(122, 39%, 15%);
+  }
+
+  .csv-row:nth-child(even) {
+    background-color: var(--muted);
+  }
+
+  .status-indicator {
+    animation: pulse 2s infinite;
+  }
+
+  .fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  .tab-content {
+    min-height: 60vh;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
